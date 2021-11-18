@@ -1,5 +1,5 @@
 {% set name = "npx" %}
-{% set version = "0.0.23" %}
+{% set version = "0.0.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: be8946891b581a37f7f6e06372b8d0518cb5fc541e20f70d698c11b6ce116705
+  sha256: 366421239d63d1079ce43028ea58f6298602067d1ad642992b81b7d5ccd7dbe6
 
 build:
   noarch: python
