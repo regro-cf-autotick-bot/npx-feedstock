@@ -1,5 +1,5 @@
 {% set name = "npx" %}
-{% set version = "0.0.25" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 152b4022479e9e211853c0ed33e0ace0da5e417a1e18b611c5df66a561ba55c9
+  sha256: 3edec9508326b6724d7c176dbcba2098508788241b8a671aab583d0c72b2f05b
 
 build:
   noarch: python
@@ -18,30 +18,29 @@ requirements:
   host:
     - python >=3
     - pip
-    - setuptools
+    - flit
   run:
     - python >=3
-    - importlib_metadata
     - numpy
 
 test:
   imports:
     - npx
   requires:
-    - exdown
+    - pytest-codeblocks
     - pytest
   source_files:
     - README.md
     - tests
   commands:
-    - python -m pytest
+    - python -m pytest --codeblocks
 
 about:
   home: https://github.com/nschloe/npx
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: Useful fixes and extensions for NumPy
+  summary: Useful extensions for NumPy
   dev_url: https://github.com/nschloe/npx
 
 extra:
