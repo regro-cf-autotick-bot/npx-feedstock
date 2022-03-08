@@ -7,7 +7,7 @@ Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/npx-feedstock/blob/master/LICENSE.txt)
 
-Summary: Useful fixes and extensions for NumPy
+Summary: Useful extensions for NumPy
 
 Development: https://github.com/nschloe/npx
 
